@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的一些操作</title>
+
+</head>
+<body>
+    <script>
+        // let arr = [1,2,3,4,5,6,7,8,9];
+        // console.log(arr);
+        // 删除头部 改变原数组 返回的是删除的元素
+        // let s = arr.shift();
+
+        // 删除尾部 改变原数组 返回的是删除的元素
+        // let s = arr.pop();
+
+        // 在头部添加元素 改变原数组，返回的是新的数组长度
+        // let s = arr.unshift('头部');
+
+        // 在尾部添加元素 改变原数组，返回的是新的数组长度
+        // let s = arr.push('尾部');
+        // console.log(arr,s);
+
+        // let arr1 = [5,10,2,6,3,8,7,9,1,4];
+        // console.log(arr1);
+        // 升序 改变原数组
+        // let s = arr1.sort(function(a,b){return a-b});
+
+        // 降序 改变原数组
+        // let s =  arr1.sort(function(a,b){return b-a});
+        // console.log(s);
+        
+        // age升序排序
+        // let arr2 = [{age:20,},{age:19,},{age:18,},{age:23,},{age:21,},{age:22,}];
+        // arr2.sort(function(a,b){
+        //     return a.age-b.age;
+        // })
+        // console.log(arr2);
+
+        // let arr3 = [1,2,3,4,5];
+        // console.log(arr3);
+        // // 删除/添加/删除并添加元素 改变原数组 返回的是删除的元素
+        // let a = arr3.splice(0,5,6,7,8,9,10);
+        // console.log(a,arr3);
+
+        // let arr = [1,2,3,4,5,6,7,8,9,10];
+        // console.log(arr);
+        // // 数组的截取，参数：开始下标，结束下标【不包含结束下标】，返回的是截取的数组，不改变原数组
+        // let a = arr.slice(0,5);
+        // console.log(arr,a);
+        
+        // let arr = [1,2,3],arr1 = [4,5,['你','好'],6];
+        // // 合并数组，不改变原数组
+        // let s = arr.concat(arr1);
+        // console.log(arr,arr1,s);
+
+        // let arr = [1,2,3,4,5];
+        // // 颠倒数组，改变原数组
+        // arr.reverse();
+        // console.log(arr);
+
+        // let arr = [1,2,3,4,5,6,7,8,9,'你',NaN];
+        // // // 查找数组中是否有对应的元素，有返回对应的下标，没有返回-1
+        // // let a = arr.indexOf('你');
+        // // console.log(a);
+        // let b = arr.includes(NaN);
+        // console.log(b);
+
+        // let arr = [1,2,1,2,3,1,2,3];
+        // let s = Array.from(new Set(arr));
+        // console.log(s);
+        let arr = [1,2,3,4,5];
+        arr.forEach((item,index)=>{
+            if(item == 3){
+                arr[index] = 'nihao';
+            }
+        })
+        console.log(arr);
+    </script>
+</body>
+</html>
